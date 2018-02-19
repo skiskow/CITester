@@ -2,7 +2,7 @@ language: node_js
 install: 
 - cd .\functions
 - npm install
--cd ..
+- cd ..
 script:
 - npm test
 - eslint .\public\javascripts *.js --fix >> lintOuput.txt
