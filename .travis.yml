@@ -1,5 +1,8 @@
 language: node_js
-install: npm install
+install: 
+- cd .\functions
+- npm install
+-cd ..
 script:
 - npm test
 - eslint .\public\javascripts *.js --fix >> lintOuput.txt
