@@ -2,8 +2,10 @@ language: node_js
 node_js: "6.11.5"
 install: 
 - cd ./functions
-- npm install
+- npm install --save-dev
 - cd ..
 script:
+- cd ./functions
 - npm test
+- cd ..
 - eslint ./public/javascripts *.js --fix >> lintOuput.txt
